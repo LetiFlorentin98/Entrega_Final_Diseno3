@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIDKIT</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="home.html" class="logo">
+                <img src="assets/imagenes/logo.svg" alt="KIDKIT Logo" class="logo__img">
+            </a>
+            <div class="header__menu">
+                <nav class="nav" id="navMenu">
+                    <ul class="nav__list">
+                        <li><a href="#" class="nav__link">¿Qué es Kidkit?</a></li>
+                        <li><a href="#" class="nav__link">¿Cómo funciona?</a></li>
+                        <li><a href="#" class="nav__link">Sobre nosotros</a></li>
+                        <li><a href="#" class="nav__link">Planes</a></li>
+                        <li><a href="#" class="nav__link">PequeSwap</a></li>
+                    </ul>
+                    <button class="nav__close" id="navClose" aria-label="Cerrar menú">
+                        <i data-lucide="x"></i>
+                    </button>
+                </nav>
+                <button onclick="location.href='detalle.html'" class="btn btn--outline header__cta">Suscribite</button>
+                <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Detalle -->
+    <section class="hero-detalle">
+        <img src="assets/imagenes/background_orange.svg" alt="Fondo naranja" class="hero-detalle__bg" />
+        <div class="hero-detalle__container">
+            <div class="hero-detalle__img-col">
+                <img src="assets/imagenes/caja_naranja_detalle.png" alt="Caja Kidkit Manualidades"
+                    class="hero-detalle__img" />
+            </div>
+            <div class="hero-detalle__content-col">
+                <span class="hero-detalle__tag">
+                    <div class="hero__badge-icon subscriptions__plan-popular-icon hero-detalle__tag-icon"><img
+                            src="./assets/imagenes/Star_4.svg" alt="Star"></div> Manualidades
+                </span>
+                <h1 class="hero-detalle__title">
+                    Una <span class="hero-detalle__title--violeta">aventura</span> <span
+                        class="hero-detalle__title--naranja">creativa</span> en casa
+                </h1>
+                <div class="hero-detalle__price-row">
+                    <span class="hero-detalle__price">$29.500</span><span class="hero-detalle__price-unit">/mes</span>
+                </div>
+                <p class="hero-detalle__desc">Un kit creativo para disfrutar, explorar y jugar en familia.</p>
+                <div class="hero-detalle__features">
+                    <div class="hero-detalle__feature">
+                        <span class="hero-detalle__feature-icon"><i data-lucide="package"></i></span>
+                        <p class="hero-detalle__feature-text">Todo incluido</p>
+                    </div>
+                    <div class="hero-detalle__feature">
+                        <span class="hero-detalle__feature-icon"><i data-lucide="truck"></i></span>
+                        <p class="hero-detalle__feature-text">Envío sin cargo</p>
+                    </div>
+                    <div class="hero-detalle__feature">
+                        <span class="hero-detalle__feature-icon"><i data-lucide="palette"></i></span>
+                        <p class="hero-detalle__feature-text">Juego creativo</p>
+                    </div>
+                    <div class="hero-detalle__feature">
+                        <span class="hero-detalle__feature-icon"><i data-lucide="sprout"></i></span>
+                        <p class="hero-detalle__feature-text">Crecé jugando</p>
+                    </div>
+                </div>
+                <a href="#" class="btn hero__btn hero-detalle__btn">Quiero este kit</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Sección ¿Como usar? -->
+        <section class="como-usar">
+            <div class="container__usar">
+                <img src="assets/imagenes/heart.svg" alt="Decorativo corazón"
+                    class="como-usar__decor como-usar__decor--heart" />
+                <img src="assets/imagenes/figure_10.svg" alt="Decorativo figura"
+                    class="como-usar__decor como-usar__decor--figure10" />
+                <h2 class="como-usar__titulo">
+                    ¿Cómo
+                    <span class="steps__title-highlight-wrap">
+                        <span class="steps__title--highlight">usar</span>
+                        <img src="assets/imagenes/subrayado_subtitulo_chico.svg" alt="Subrayado aventura"
+                            class="steps__title-underline" />
+                    </span> el KidKit?
+                </h2>
+                <p class="como-usar__descripcion">
+                    Con KidKit, compartir tiempo real en familia es fácil y divertido. Cada paso está pensado para
+                    crear, jugar y conectar juntos.
+                </p>
+                <div class="como-usar__cards">
+                    <div class="card__usar card__violeta">
+                        <span class="card__icon-tab">
+                            <i data-lucide="gift"></i>
+                        </span>
+                        <h3>Recibí tu KidKit</h3>
+                        <p>Tu caja llega con todo lo que necesitás. No hace falta buscar nada extra: ¡abrila y empezá!
+                        </p>
+                    </div>
+                    <div class="card__usar card__naranja">
+                        <span class="card__icon-tab">
+                            <i data-lucide="book-open-check"></i>
+                        </span>
+                        <h3>Explorá paso a paso</h3>
+                        <p>Descubrí ideas para crear con la guía ilustrada. Cada actividad está explicada de forma clara
+                            y visual.</p>
+                    </div>
+                    <div class="card__usar card__rosa">
+                        <span class="card__icon-tab">
+                            <i data-lucide="brush"></i>
+                        </span>
+                        <h3>¡A crear!</h3>
+                        <p>Pintá, recortá, pegá… cada paso suma. Vas a ver cómo todo se transforma con tus manos.</p>
+                    </div>
+                    <div class="card__usar card__celeste">
+                        <span class="card__icon-tab">
+                            <i data-lucide="sparkles"></i>
+                        </span>
+                        <h3>Seguí jugando</h3>
+                        <p>Compartí lo que hiciste o canjealo por otra experiencia. Siempre hay una nueva aventura con
+                            KidKit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección ¿Qué trae este mes tu KidKit? -->
+        <section class="kit-items">
+            <!-- Decorativos -->
+            <img src="assets/imagenes/crown.svg" alt="Decorativo corona"
+                class="kit-items__decor kit-items__decor--crown" />
+            <img src="assets/imagenes/line_10.svg" alt="Decorativo línea"
+                class="kit-items__decor kit-items__decor--line10" />
+            <h2 class="kit-items__title">
+                ¿Qué <span class="kit-items__title--violeta">trae</span> este mes tu KidKit?
+            </h2>
+            <div class="kit-items__list">
+                <div class="kit-items__item">
+                    <div class="kit-items__img-bg">
+                        <img src="assets/imagenes/tijeras.png" alt="Tijera segura para chicos" class="kit-items__img" />
+                    </div>
+                    <p class="kit-items__desc">Tijera segura para chicos</p>
+                </div>
+                <div class="kit-items__item">
+                    <div class="kit-items__img-bg">
+                        <img src="assets/imagenes/pinceles.png" alt="Set de pinceles para pintar"
+                            class="kit-items__img" />
+                    </div>
+                    <p class="kit-items__desc">Set de pinceles para pintar</p>
+                </div>
+                <div class="kit-items__item">
+                    <div class="kit-items__img-bg">
+                        <img src="assets/imagenes/lapices.png" alt="Lápices de colores brillantes"
+                            class="kit-items__img" />
+                    </div>
+                    <p class="kit-items__desc">Lápices de colores brillantes</p>
+                </div>
+                <div class="kit-items__item">
+                    <div class="kit-items__img-bg">
+                        <img src="assets/imagenes/papeles.png" alt="Hojas de colores" class="kit-items__img" />
+                    </div>
+                    <p class="kit-items__desc">Hojas de colores surtidos</p>
+                </div>
+                <div class="kit-items__item">
+                    <div class="kit-items__img-bg">
+                        <img src="assets/imagenes/pegamento.png" alt="Pegamento lavable y seguro"
+                            class="kit-items__img" />
+                    </div>
+                    <p class="kit-items__desc">Pegamento lavable y seguro</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Eleccion -->
+        <section class="pequeswap eleccion">
+            <!-- Agregar fuera del contenedor violeta, arriba y casi centrado respecto a la imagen -->
+            <img src="assets/imagenes/sparkle_solo.svg" alt="Decorativo sparkles"
+                class="eleccion__decor eleccion__decor--sparkle" />
+            <img src="assets/imagenes/heart_celeste.svg" alt="Decorativo corazón celeste"
+                class="eleccion__decor eleccion__decor--heart-celeste" />
+            <img src="assets/imagenes/figure_11.svg" alt="Decorativo figura 11"
+                class="eleccion__decor eleccion__decor--figure11" />
+            <img src="assets/imagenes/line_12.svg" alt="Decorativo línea 12"
+                class="eleccion__decor eleccion__decor--line12" />
+            <div class="pequeswap-card">
+                <div class="pequeswap__container eleccion__container">
+                    <div class="pequeswap__left plan-benefits">
+                        <h2 class="plan-benefits__title">
+                            ¿Por qué <span class="plan-benefits__title--highlight">elegir</span> KidKit?
+                        </h2>
+                        <div class="plan-benefits__slider">
+                            <span class="plan-benefits__bar"></span>
+                            <div class="plan-benefits__item active">
+                                <div class="plan-benefits__subtitle">
+                                    Diversión en familia
+                                </div>
+                                <div class="plan-benefits__desc">
+                                    Cada actividad está pensada para disfrutar juntos, compartir momentos y fortalecer
+                                    vínculos a través del juego.
+                                </div>
+                            </div>
+                            <div class="plan-benefits__item">
+                                <div class="plan-benefits__subtitle">Educativo y creativo</div>
+                                <div class="plan-benefits__desc">
+                                    Cada propuesta estimula la imaginación, desarrolla habilidades y acompaña el
+                                    aprendizaje de forma divertida.
+                                </div>
+                            </div>
+                            <div class="plan-benefits__item">
+                                <div class="plan-benefits__subtitle">Cero pantallas</div>
+                                <div class="plan-benefits__desc">
+                                    Diseñado para conectar con el juego real, sin dispositivos, priorizando la
+                                    exploración y el contacto con materiales.
+                                </div>
+                            </div>
+                            <div class="plan-benefits__item">
+                                <div class="plan-benefits__subtitle">Listo para usar</div>
+                                <div class="plan-benefits__desc">
+                                    Todo viene preparado para arrancar sin demoras, con materiales listos y pensados
+                                    para empezar a crear al instante.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pequeswap__right eleccion__right">
+                        <img src="assets/imagenes/eleccion_family.png" alt="Familia PequeSwap" class="pequeswap__img" />
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sección Suscripciones -->
+        <section class="subscriptions">
+            <div class="subscriptions__container">
+                <h2 class="subscriptions__title">
+                    Descubrí <span class="subscriptions__title--violeta">otros kits</span> mensuales
+                </h2>
+                <p class="subscriptions__desc">
+                    Nuevas propuestas para seguir explorando, creando y aprendiendo en casa.
+                </p>
+                <div class="subscriptions__plans">
+                    <!-- Plan Cocina Fácil -->
+                    <div class="subscriptions__plan subscriptions__plan--violeta subscriptions__plan--compact">
+                        <div class="subscriptions__plan-header">
+                            <span class="subscriptions__plan-sub">Mini Chef</span>
+                            <span class="subscriptions__plan-title">Plan Cocina Fácil</span>
+                        </div>
+                        <div class="subscriptions__plan-img-wrap">
+                            <img src="assets/imagenes/suscripcion_caja_violeta.png" alt="Caja Cocina Fácil"
+                                class="subscriptions__plan-img" />
+                        </div>
+                        <div class="subscriptions__plan-price-row">
+                            <span class="subscriptions__plan-price">$27.250</span><span
+                                class="subscriptions__plan-price-unit">/mes</span>
+                        </div>
+                        <button
+                            class="btn subscriptions__plan-btn subscriptions__plan-btn--outline">Suscribirse</button>
+                        <ul class="subscriptions__plan-bullets">
+                            <li><i data-lucide="badge-check"></i>Recetas fáciles y divertidas en familia.</li>
+                            <li><i data-lucide="badge-check"></i>Ingredientes y utensilios incluidos.</li>
+                            <li><i data-lucide="badge-check"></i>Guía ilustrada paso a paso.</li>
+                        </ul>
+                    </div>
+                    <!-- Plan Ciencia Simple -->
+                    <div class="subscriptions__plan subscriptions__plan--azul-marino subscriptions__plan--compact">
+                        <div class="subscriptions__plan-header">
+                            <span class="subscriptions__plan-sub">Pequeño Explorador</span>
+                            <span class="subscriptions__plan-title">Plan Ciencia Simple</span>
+                        </div>
+                        <div class="subscriptions__plan-img-wrap">
+                            <img src="assets/imagenes/suscripcion_caja_azul.png" alt="Caja Ciencia Simple"
+                                class="subscriptions__plan-img" />
+                        </div>
+                        <div class="subscriptions__plan-price-row">
+                            <span class="subscriptions__plan-price">$31.750</span><span
+                                class="subscriptions__plan-price-unit">/mes</span>
+                        </div>
+                        <button
+                            class="btn subscriptions__plan-btn subscriptions__plan-btn--outline">Suscribirse</button>
+                        <ul class="subscriptions__plan-bullets">
+                            <li><i data-lucide="badge-check"></i>Experimentos simples y divertidos.</li>
+                            <li><i data-lucide="badge-check"></i>Materiales e instrucciones incluidos.</li>
+                            <li><i data-lucide="badge-check"></i>Guía ilustrada paso a paso.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Preguntas Frecuentes -->
+        <section class="contacto">
+            <!-- Decorativo superior derecho -->
+            <img src="assets/imagenes/figure_9.svg" alt="Decorativo figura 9"
+                class="faqs__decor faqs__decor--figure9" />
+
+            <div class="contacto__container">
+                <div class="contacto__img-col faqs__detalle-img">
+                    <img src="assets/imagenes/nina_formulario.png" alt="Niña creativa" class="contacto__img" />
+                </div>
+                <div class="faqs__right">
+                    <h2 class="faqs__title">Preguntas frecuentes</h2>
+                    <div class="faqs__accordion">
+                        <!-- Pregunta 1 -->
+                        <div class="faqs__item active">
+                            <button class="faqs__question" type="button">
+                                <span class="faqs__question-title faqs__question-title--active">¿Qué tipo de
+                                    manualidades incluye el kit?</span>
+                                <span class="faqs__question-icon"><i data-lucide="plus"></i></span>
+                            </button>
+                            <div class="faqs__answer">
+                                Cada mes, el kit incluye 2 o 3 propuestas para recortar, pintar, armar y decorar. Las
+                                actividades varían según la temática y están pensadas para estimular la creatividad con
+                                materiales seguros y accesibles.
+                            </div>
+                        </div>
+                        <!-- Pregunta 2 -->
+                        <div class="faqs__item">
+                            <button class="faqs__question" type="button">
+                                <span class="faqs__question-title">¿Hace falta supervisión adulta para las
+                                    actividades?</span>
+                                <span class="faqs__question-icon"><i data-lucide="plus"></i></span>
+                            </button>
+                            <div class="faqs__answer">
+                                Sí, las actividades están pensadas para disfrutar en familia. La compañía de un adulto
+                                no solo es importante por seguridad, sino que enriquece la experiencia y fortalece
+                                vínculos durante el proceso.
+                            </div>
+                        </div>
+                        <!-- Pregunta 3 -->
+                        <div class="faqs__item">
+                            <button class="faqs__question" type="button">
+                                <span class="faqs__question-title">¿Qué pasa si mi hijo no hizo manualidades
+                                    antes?</span>
+                                <span class="faqs__question-icon"><i data-lucide="plus"></i></span>
+                            </button>
+                            <div class="faqs__answer">
+                                No es necesario tener experiencia previa. Las actividades están diseñadas para guiar
+                                paso a paso, fomentando la confianza, la exploración libre y el disfrute, sin importar
+                                el nivel de habilidad.
+                            </div>
+                        </div>
+                        <!-- Pregunta 4 -->
+                        <div class="faqs__item">
+                            <button class="faqs__question" type="button">
+                                <span class="faqs__question-title">¿Cuánto tiempo lleva hacer cada actividad?</span>
+                                <span class="faqs__question-icon"><i data-lucide="plus"></i></span>
+                            </button>
+                            <div class="faqs__answer">
+                                Depende de la propuesta, pero en general cada actividad lleva entre 30 y 60 minutos.
+                                Están pensadas para adaptarse al ritmo de cada familia y para que puedan pausarse y
+                                retomarse si es necesario.
+                            </div>
+                        </div>
+                        <!-- Pregunta 5 -->
+                        <div class="faqs__item">
+                            <button class="faqs__question" type="button">
+                                <span class="faqs__question-title">¿Qué hago si se me termina algún material?</span>
+                                <span class="faqs__question-icon"><i data-lucide="plus"></i></span>
+                            </button>
+                            <div class="faqs__answer">
+                                Podés reemplazarlo fácilmente por materiales similares que tengas en casa. Todas las
+                                propuestas están pensadas con elementos accesibles, para que la actividad pueda
+                                resolverse sin complicaciones ni cortes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="content-footer">
+            <div class="footer-top">
+                <img class="kidkit-logo-footer" alt="KidKit logo" src="assets/imagenes/logo_blanco.svg">
+            </div>
+
+            <!-- Desktop -->
+            <div class="footer-bottom-desktop">
+                <ul class="footer-title-top">
+                    <li class="footer-title">Ayuda</li>
+                    <ul class="footer-list">
+                        <li><a href="#">Encontrá un local</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                        <li><a href="#">Comunidad KidKit</a></li>
+                    </ul>
+                </ul>
+
+                <ul class="footer-title-top">
+                    <li class="footer-title">Acerca de KidKit</li>
+                    <ul class="footer-list">
+                        <li><a href="#">Nuestra empresa</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">PequeSwap</a></li>
+                    </ul>
+                </ul>
+
+                <ul class="footer-title-top">
+                    <li class="footer-title">Planes</li>
+                    <ul class="footer-list">
+                        <li><a href="#">Manualidades</a></li>
+                        <li><a href="#">Cocina Fácil</a></li>
+                        <li><a href="#">Ciencia Simple</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <!-- Mobile -->
+            <div class="footer-bottom-mobile">
+                <ul class="footer-title-top">
+                    <li class="footer-title" onclick="toggleMenu(this)">
+                        Ayuda <div class="icon"><span class="material-symbols-rounded">add</span></div>
+                    </li>
+                    <ul class="footer-list">
+                        <li><a href="#">Encontrá un local</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                        <li><a href="#">Comunidad KidKit</a></li>
+                    </ul>
+                </ul>
+
+                <div class="divider divider-options"></div>
+
+                <ul class="footer-title-top">
+                    <li class="footer-title" onclick="toggleMenu(this)">
+                        Acerca de KidKit <div class="icon"><span class="material-symbols-rounded">add</span></span>
+                        </div>
+                    </li>
+                    <ul class="footer-list">
+                        <li><a href="#">Nuestra empresa</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">PequeSwap</a></li>
+                    </ul>
+                </ul>
+
+                <div class="divider divider-options"></div>
+
+                <ul class="footer-title-top">
+                    <li class="footer-title" onclick="toggleMenu(this)">
+                        Planes <div class="icon"><span class="material-symbols-rounded">add</span></div>
+                    </li>
+                    <ul class="footer-list">
+                        <li><a href="#">Manualidades</a></li>
+                        <li><a href="#">Cocina Fácil</a></li>
+                        <li><a href="#">Ciencia Simple</a></li>
+                    </ul>
+                </ul>
+
+                <div class="divider divider-options"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Información de la cátedra y comisión -->
+        <div class="divider divider-footer"></div>
+
+        </div>
+        <div class="info-container">
+            <div class="info-datos">
+                <div>
+                    <span class="info info-decoration especial">© KidKit Argentina</span>
+                </div>
+                <div>
+                    <span class="info  info-decoration">2025</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/function.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+</body>
+
+</html>
